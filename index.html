@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Pavan Kumar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Dev<span>Portfolio</span></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Particle container -->
+        <div id="particles-js" class="particles-container"></div>
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <p class="greeting">Hello, world!</p>
+                <h1>Hi, I'm <span class="highlight">Pavan Kumar</span></h1>
+                <p class="subtext">Building intelligent systems, modern web applications, and impactful digital solutions.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary btn-glow">View Projects</a>
+                    <a href="#" class="btn btn-secondary">Download Resume</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-scale">
+                <div class="image-wrapper glass-panel">
+                    <div class="abstract-shape">
+                        <i class="fas fa-code abstract-icon float-anim"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text glass-panel fade-in-left">
+                    <p class="about-desc">A passionate software developer focused on creating efficient, scalable, and intelligent solutions. Strong interest in Artificial Intelligence, web technologies, and solving real-world problems through technology.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item glass-card fade-in-up" style="animation-delay: 0.1s;">
+                        <div class="icon-wrapper"><i class="fas fa-laptop-code"></i></div>
+                        <span>Strong programming and analytical skills</span>
+                    </div>
+                    <div class="highlight-item glass-card fade-in-up" style="animation-delay: 0.2s;">
+                        <div class="icon-wrapper"><i class="fas fa-brain"></i></div>
+                        <span>Interest in AI and intelligent systems</span>
+                    </div>
+                    <div class="highlight-item glass-card fade-in-up" style="animation-delay: 0.3s;">
+                        <div class="icon-wrapper"><i class="fas fa-rocket"></i></div>
+                        <span>Experience in developing practical applications</span>
+                    </div>
+                    <div class="highlight-item glass-card fade-in-up" style="animation-delay: 0.4s;">
+                        <div class="icon-wrapper"><i class="fas fa-book-open"></i></div>
+                        <span>Continuous learner and technology enthusiast</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in-up">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-card glass-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="card-icon"><i class="fas fa-terminal float-anim"></i></div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C</span>
+                            <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-card glass-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="card-icon"><i class="fas fa-globe float-anim"></i></div>
+                    <h3>Web Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML</span>
+                            <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS</span>
+                            <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="progress-bar"><div class="progress" data-width="70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Technologies -->
+                <div class="skill-card glass-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="card-icon"><i class="fas fa-database float-anim"></i></div>
+                    <h3>Database Technologies</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-card glass-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="card-icon"><i class="fas fa-tools float-anim"></i></div>
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-badges">
+                        <span class="badge"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="badge"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="badge"><i class="fas fa-code"></i> VS Code</span>
+                    </div>
+                </div>
+
+                <!-- Professional Strengths -->
+                <div class="skill-card glass-card fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="card-icon"><i class="fas fa-star float-anim"></i></div>
+                    <h3>Professional Strengths</h3>
+                    <div class="skill-badges">
+                        <span class="badge">Problem Solving</span>
+                        <span class="badge">Communication</span>
+                        <span class="badge">Team Collaboration</span>
+                        <span class="badge">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-pills float-anim"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary btn-sm btn-glow">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Smart Medicine Reminder</h3>
+                        <p>An AI-assisted healthcare system designed to help elderly users manage medication schedules through intelligent reminders and health tracking.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">Database</span>
+                        </div>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle text-gradient"></i> Personalized medication alerts</li>
+                            <li><i class="fas fa-check-circle text-gradient"></i> Medical database integration</li>
+                            <li><i class="fas fa-check-circle text-gradient"></i> Health monitoring dashboard</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="project-img">
+                        <div class="img-placeholder"><i class="fas fa-water float-anim"></i></div>
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-primary btn-sm btn-glow">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Powered Smart Water Quality Monitoring System</h3>
+                        <p>An intelligent system integrating hardware sensors and AI to collect water data and send it to an app via a WiFi module.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Hardware</span>
+                        </div>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle text-gradient"></i> Hardware sensor integration</li>
+                            <li><i class="fas fa-check-circle text-gradient"></i> AI-powered data analysis</li>
+                            <li><i class="fas fa-check-circle text-gradient"></i> App connectivity via WiFi module</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Achievements</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="timeline-dot glow-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Developed AI-based healthcare project solutions</h3>
+                        <p>Focused on solving real-world challenges for elderly care and medical adherence.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="timeline-dot glow-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <h3>Strong academic background in computer science</h3>
+                        <p>Maintained excellence in core subjects like algorithms and data structures.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="timeline-content glass-panel">
+                        <h3>Experience in software development and problem solving</h3>
+                        <p>Proven track record of building reliable and efficient software applications.</p>
+                    </div>
+                    <div class="timeline-dot glow-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Get In Touch</h2>
+            <div class="contact-wrapper glass-panel fade-in-scale">
+                <div class="contact-info">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Don't like forms? Send me an email. 👋</p>
+                    <div class="contact-methods">
+                        <a href="mailto:pavankumarmushkarla630@gmail.com" class="contact-method">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <span>pavankumarmushkarla630@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pavan-kumar-m-8a223a3a2?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-method">
+                            <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="contact-method">
+                            <div class="icon-box"><i class="fab fa-github"></i></div>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="from_name" placeholder="Your Name" required class="glass-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="from_email" placeholder="Your Email" required class="glass-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required class="glass-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-glow">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Dev<span class="highlight">Portfolio</span></div>
+            <p>&copy; 2026 Pavan Kumar. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pavan-kumar-m-8a223a3a2?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:pavankumarmushkarla630@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
